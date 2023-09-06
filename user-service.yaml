@@ -1,0 +1,25 @@
+server:
+  servlet:
+    context-path: /user/
+  port: 8081
+
+spring:
+  application:
+    name: user-service
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/htc_user_management?createDatabaseIfNotExist=true&autoReconnect=true&useUnicode=yes&characterEncoding=UTF-8&allowLoadLocalInfile=true
+    userName: root
+    password: Root@123
+    driver:
+      class: com.mysql.cj.jdbc.Driver
+
+  flyway:
+    enabled: true
+    schemas: htc_user_management
+    outOfOrder: true
+
+eureka:
+  client:
+    service-url:
+      default-zone: http://localhost:8761/

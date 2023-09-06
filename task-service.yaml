@@ -1,0 +1,26 @@
+server:
+  servlet:
+    context-path: /task-service/
+  port: 8080
+
+spring:
+  application:
+    name: task-service
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/htc_task_management?createDatabaseIfNotExist=true&autoReconnect=true&useUnicode=yes&characterEncoding=UTF-8&allowLoadLocalInfile=true
+    username: root
+    password: Root@123
+    driver:
+      class: com.mysql.cj.jdbc.Driver
+
+  flyway:
+    enabled: true
+    schemas: htc_task_management
+    outOfOrder: true
+
+eureka:
+  client:
+    service-url:
+      default-zone: http://localhost:8761/
+
