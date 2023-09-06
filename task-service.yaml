@@ -1,7 +1,6 @@
 server:
   servlet:
     context-path: /task-service/
-  port: 8080
 
 spring:
   application:
