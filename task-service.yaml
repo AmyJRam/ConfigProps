@@ -1,6 +1,6 @@
 server:
   servlet:
-    context-path: /task-service/
+    context-path: /task/
 
 spring:
   application:
