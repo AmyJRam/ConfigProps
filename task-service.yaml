@@ -18,8 +18,5 @@ spring:
     schemas: htc_task_management
     outOfOrder: true
 
-eureka:
-  client:
-    service-url:
-      default-zone: http://localhost:8761/
+
 
